@@ -30,11 +30,3 @@ end
 
 puts "Done"
 
-puts "creating Cocktails..."
-
-30.times do
-  cocktail = Cocktail.create(name: Faker::Dessert.flavor)
-  puts cocktail.name
-end
-
-puts "Done"
