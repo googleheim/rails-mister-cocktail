@@ -6,15 +6,16 @@
   </div>
 </div>
 
-
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12 col-lg-6">
       <%= simple_form_for @cocktail do |f| -%>
         <%= f.input :name %>
+        <%= f.input :photo %>
+        <%= f.input :photo_cache, as: :hidden %>
         <div class="text-center">
-          <%= f.submit "Add cocktail", class: "btn btn-primary w-50"  %>
-        </div>
+            <%= f.submit "Add cocktail", class: "btn btn-primary w-50"  %>
+      </div>
       <% end -%>
     </div>
   </div>
