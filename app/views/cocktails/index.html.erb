@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3298&q=80);">
+<div class="banner p-5" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3298&q=80);">
   <div class="container">
     <div class="centered">
       <h1>This website brings drinking skills to sober people!</h1>
@@ -7,12 +7,12 @@
       <p><strong>Change your life and get a drink!</strong></p>
     </div>
     <div class="centered">
-      <%= link_to "Create a cocktail", new_cocktail_path, class: "btn btn-primary w-50"  %>
+      <%= link_to "Create a cocktail", new_cocktail_path, class: "h1 p-5 btn btn-primary w-50"  %>
     </div>
   </div>
 </div>
 
-<div class="container pt-3">
+<div class="container mt-5 pt-3">
   <h1 class="text-center mt-3">My Cocktails</h1>
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
@@ -21,7 +21,7 @@
       </div>
     <% end %>
    </div>
-   <div class="centered py-5">
-      <%= link_to "Create a cocktail", new_cocktail_path, class: "btn btn-primary w-50"  %>
+   <div class="centered py-2 height: 50px">
+
    </div>
 </div>
